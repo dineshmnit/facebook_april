@@ -1,0 +1,3 @@
+Error[1027] E:\zine programs\l_l_l controller all\June 2012\l_l_l controller code 23-6-12\src\led.c 3 : unable to locate 'led.h'
+Error[1027] E:\zine programs\l_l_l controller all\June 2012\l_l_l controller code 23-6-12\src\led.c 4 : unable to locate 'sseg.h'
+Error[1027] E:\zine programs\l_l_l controller all\June 2012\l_l_l controller code 23-6-12\src\led.c 5 : unable to locate 'ecan.h'

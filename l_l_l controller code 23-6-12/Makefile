@@ -1,0 +1,43 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: PIC18FxxK80ECAN E3.mcp
+# Date: Tue May 01 21:49:12 2012
+
+AS = MPASMWIN.exe
+CC = mcc18.exe
+LD = mplink.exe
+AR = mplib.exe
+RM = rm
+
+PIC18FxxK80ECAN\ E3.cof : delay.o led.o main.o sseg.o ECAN.o recdata.o inti.o rtc.o setting.o
+	$(LD) /p18F46K80 /l"C:\Program Files\Microchip\mplabc18\v3.41\lib" "delay.o" "led.o" "main.o" "sseg.o" "ECAN.o" "recdata.o" "inti.o" "rtc.o" "setting.o" /u_CRUNTIME /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /z__MPLAB_DEBUGGER_REAL_ICE=1 /z__ICD2RAM=1 /m"PIC18FxxK80ECAN E3.map" /w /o"PIC18FxxK80ECAN E3.cof"
+
+delay.o : src/delay.c
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\delay.c" -fo="delay.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+led.o : src/led.c h/led.h h/sseg.h src/led.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\led.c" -fo="led.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+main.o : src/main.c h/ECAN.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/string.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stdio.h h/sseg.h h/led.h h/recdata.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/adc.h h/rtc.h h/setting.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/eep.h src/main.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h h/inti.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stddef.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stdarg.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/pconfig.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\main.c" -fo="main.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+sseg.o : src/sseg.c h/sseg.h h/led.h src/sseg.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\sseg.c" -fo="sseg.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+ECAN.o : src/ECAN.c h/ECAN.h src/ECAN.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\ECAN.c" -fo="ECAN.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+recdata.o : src/recdata.c h/led.h h/recdata.h h/sseg.h src/recdata.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\recdata.c" -fo="recdata.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+inti.o : src/inti.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/adc.h src/inti.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/pconfig.h h/inti.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\inti.c" -fo="inti.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+rtc.o : src/rtc.c h/rtc.h src/rtc.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\rtc.c" -fo="rtc.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+setting.o : src/setting.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/string.h h/setting.h h/sseg.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stdio.h src/setting.c ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18cxxx.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/p18f46k80.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stddef.h ../../../../Program\ Files/Microchip/mplabc18/v3.41/h/stdarg.h
+	$(CC) -p=18F46K80 /i"C:\Documents and Settings\varun\Desktop\l_l_l controller code 1-5-12 with time check and prolonged on_off button press\h" "src\setting.c" -fo="setting.o" -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1 -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+clean : 
+	$(RM) "delay.o" "led.o" "main.o" "sseg.o" "ECAN.o" "recdata.o" "inti.o" "rtc.o" "setting.o" "PIC18FxxK80ECAN E3.cof" "PIC18FxxK80ECAN E3.hex" "PIC18FxxK80ECAN E3.map"
+
